@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'bootstrap5',
     'hackatonApp',
     'adminApp',
+    'userApp',
 ]
 
 MIDDLEWARE = [
