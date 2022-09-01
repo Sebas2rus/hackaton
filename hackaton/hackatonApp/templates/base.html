@@ -1,0 +1,76 @@
+{% load static %}
+{% load bootstrap5 %}
+
+{%bootstrap_css%}
+{%bootstrap_javascript%}
+{%bootstrap_messages%}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>
+        {% comment %} <link rel="icon" src="{% static 'img/LogoWebViajes.png' %}"> {% endcomment %}
+        {% block title %}{% endblock  %}
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  <body>
+      {% comment %} Barra de navegacion {% endcomment %}
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand px-5" href="#"><img src="{% static 'img/code.jpg' %}" class="rounded-circle" style="width: 120px;" alt="My imagen"></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse p-3" id="collapsibleNavId">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0 px-5">
+                <li class="nav-item active mx-2">
+                    <a class="nav-link text-warning" href="#">Inicio<span class="visually-hidden">(current)</span></a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link text-warning " href="#">Sobre nosotros</a>
+                </li>            
+                <li class="nav-item mx-2">
+                    <a class="nav-link text-warning" href="#">Info</a>
+                </li>                        
+            </ul>        
+        </div>
+        </div>
+    </nav>
+
+    
+
+{% block content %}
+
+{% endblock content %}
+
+    <div class="container-fluid bg-dark py-5">
+        <div class="container">
+            <div class="row ">
+                <div class="col-4">
+                    <div class="list-group border">
+                        <a href="#" class="list-group-item list-group-item-action bg-dark text-warning text-center">Active item</a>
+                        <a href="#" class="list-group-item list-group-item-action bg-dark text-warning text-center">Item</a>
+                        <a href="#" class="list-group-item list-group-item-action bg-dark text-warning text-center">Disabled item</a>
+                    </div>
+                </div>                                
+                <div class="col-4">
+                    <div class="list-group border">
+                        <a href="#" class="list-group-item list-group-item-action bg-dark text-warning text-center">Active item</a>
+                        <a href="#" class="list-group-item list-group-item-action bg-dark text-warning text-center">Item</a>
+                        <a href="#" class="list-group-item list-group-item-action bg-dark text-warning text-center">Disabled item</a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="list-group border">
+                        <a href="#" class="list-group-item list-group-item-action bg-dark text-warning text-center">Active item</a>
+                        <a href="#" class="list-group-item list-group-item-action bg-dark text-warning text-center">Item</a>
+                        <a href="#" class="list-group-item list-group-item-action bg-dark text-warning text-center">Disabled item</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </body>
+</html>
