@@ -9,19 +9,14 @@
 {% comment %} {%bootstrap_messages%} {% endcomment %}
 
 
-{% block title %} Iniciar Sesion {% endblock %}
+{% block title %} registro {% endblock %}
 
 {% block content %}
 <div class="text-center bg-dark  text-warning">
-    <h1>Iniciar sesion</h1>
+    <h1>registro</h1>
     <div class="container ">
         <form action="" method="post" class="container w-50">
             {% csrf_token %}
-            {% if messages %}
-            {% for msg in messages %}
-            <span class="text-danger">{{msg}}</span>
-            {% endfor %}
-            {% endif %}
             {% comment %} {{form}} {% endcomment %}
             {% bootstrap_form form %}
             {% buttons %} 
