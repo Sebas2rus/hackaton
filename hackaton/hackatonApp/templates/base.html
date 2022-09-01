@@ -41,8 +41,8 @@
    <div>
     <h1> 
         {% if user.is_authenticated %} hola {{user.username}}
-        &bsnp;
-        &bnps;
+        &nbsp;
+        &nbsp;
         <a href="{% url 'cerrar_sesion' %}" class="btn btn-primary ">cerrar sesion</a>
         {% else %}
         <a href="{% url 'autenticacion' %}" class="btn btn-primary ">Registrarse</a>
